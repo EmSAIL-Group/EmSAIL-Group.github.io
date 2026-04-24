@@ -1,148 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EmSAIL Lab</title>
-
-<style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #ffffff;
-  color: #222;
-}
-
-header {
-  background: #0a2540;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-nav {
-  background: #f5f7fa;
-  padding: 12px;
-  text-align: center;
-}
-
-nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #0a2540;
-  font-weight: bold;
-}
-
-section {
-  max-width: 900px;
-  margin: auto;
-  padding: 60px 20px;
-}
-
-h2 {
-  color: #0a2540;
-}
-
-.people-card {
-  margin-bottom: 15px;
-}
-
-footer {
-  text-align: center;
-  padding: 30px;
-  background: #f5f7fa;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EmSAIL Lab | Embodied Spatial AI Lab</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <header class="nav">
+    <a class="brand" href="#home">
+      <img src="logo.png" alt="EmSAIL Lab logo" />
+      <span>EmSAIL Lab</span>
+    </a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <nav id="navLinks">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#people">People</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#news">News</a>
+      <a href="#join">Join</a>
+    </nav>
+  </header>
 
-<header>
-<h1>Embodied Spatial AI Lab (EmSAIL Lab)</h1>
-<p>Building next-generation embodied spatial intelligence systems for real-world robotics</p>
-</header>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Embodied Spatial AI Lab</p>
+        <h1>EmSAIL Group</h1>
+        <h2>Embodied Intelligence & Robotics Research Lab</h2>
+        <p>
+          Building next-generation embodied spatial intelligence systems
+          for robots that perceive, reason, and act in complex real-world environments.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#research">Explore Research</a>
+          <a class="btn secondary" href="#join">Join the Lab</a>
+        </div>
+      </div>
+    </section>
 
-<nav>
-<a href="#about">About</a>
-<a href="#research">Research</a>
-<a href="#people">People</a>
-<a href="#openings">Openings</a>
-<a href="#contact">Contact</a>
-</nav>
+    <section id="about" class="section">
+      <div class="section-title">
+        <p>About</p>
+        <h2>Spatial intelligence for embodied robots</h2>
+      </div>
+      <div class="about-grid">
+        <p>
+          EmSAIL Lab focuses on next-generation embodied spatial intelligence systems
+          for robotics operating in complex real-world environments. Our goal is to
+          integrate spatial perception, representation, reasoning, and action into
+          a unified embodied intelligence pipeline.
+        </p>
+        <div class="stats">
+          <div><strong>6</strong><span>Research directions</span></div>
+          <div><strong>AI + Robotics</strong><span>Core focus</span></div>
+          <div><strong>HKUST(GZ)</strong><span>Location</span></div>
+        </div>
+      </div>
+    </section>
 
-<section id="about">
-<h2>About</h2>
-<p>
-EmSAIL Lab focuses on next-generation embodied spatial intelligence systems for robotics operating in complex real-world environments. 
+    <section id="research" class="section dark">
+      <div class="section-title">
+        <p>Research</p>
+        <h2>Research Directions</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card"><h3>Spatial Perception & SLAM</h3><p>Robust mapping, localization, and spatial understanding for real-world robotic systems.</p></article>
+        <article class="card"><h3>3D / 4D Scene Representation</h3><p>Dynamic spatial representations for embodied agents interacting with changing environments.</p></article>
+        <article class="card"><h3>Gaussian Splatting for Robotics</h3><p>Efficient neural scene representations for perception, simulation, and robot learning.</p></article>
+        <article class="card"><h3>Vision-Language-Action Models</h3><p>Connecting perception, language grounding, and robot action through foundation models.</p></article>
+        <article class="card"><h3>Robot Policy Learning</h3><p>Learning generalizable robot skills from demonstrations, interaction, and simulation.</p></article>
+        <article class="card"><h3>Embodied World Models</h3><p>Predictive models that support planning, reasoning, and autonomous decision-making.</p></article>
+      </div>
+    </section>
 
-Our goal is to develop intelligent robotic systems that integrate spatial perception, representation, reasoning, and action into a unified embodied intelligence pipeline.
-</p>
-</section>
+    <section id="people" class="section">
+      <div class="section-title">
+        <p>People</p>
+        <h2>Team</h2>
+      </div>
+      <div class="people-grid">
+        <div class="person pi">
+          <div class="avatar">YL</div>
+          <h3>Yan Li</h3>
+          <p>Principal Investigator</p>
+          <span>Director, EmSAIL Lab</span>
+        </div>
+        <div class="person">
+          <div class="avatar">C</div>
+          <h3>Chengyu</h3>
+          <p>Research Assistant</p>
+        </div>
+        <div class="person">
+          <div class="avatar">SF</div>
+          <h3>Shuo Feng</h3>
+          <p>Research Assistant</p>
+        </div>
+      </div>
+    </section>
 
-<section id="research">
-<h2>Research Directions</h2>
+    <section id="publications" class="section dark">
+      <div class="section-title">
+        <p>Publications</p>
+        <h2>Selected Publications</h2>
+      </div>
+      <div class="timeline">
+        <div class="pub">
+          <span>2025</span>
+          <h3>Publication list coming soon</h3>
+          <p>Add paper title, venue, authors, PDF, code, and project page links here.</p>
+        </div>
+      </div>
+    </section>
 
-<ul>
-<li>Spatial Perception and SLAM</li>
-<li>3D / 4D Scene Representation</li>
-<li>Gaussian Splatting for Robotics</li>
-<li>Vision-Language-Action Models</li>
-<li>Robot Policy Learning</li>
-<li>Embodied World Models</li>
-</ul>
+    <section id="projects" class="section">
+      <div class="section-title">
+        <p>Projects</p>
+        <h2>Research Projects</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card light"><h3>Embodied Spatial Mapping</h3><p>Unified mapping and representation for embodied agents.</p></article>
+        <article class="card light"><h3>Robot Foundation Models</h3><p>Vision-language-action models for general-purpose robot control.</p></article>
+        <article class="card light"><h3>Simulation-to-Real Learning</h3><p>Reliable transfer from virtual training to physical robots.</p></article>
+      </div>
+    </section>
 
-</section>
+    <section id="news" class="section dark">
+      <div class="section-title">
+        <p>News</p>
+        <h2>Latest Updates</h2>
+      </div>
+      <div class="news-list">
+        <div><time>2026</time><p>EmSAIL Lab website launched.</p></div>
+        <div><time>2026</time><p>We are recruiting PhD students, MPhil students, research assistants, and interns.</p></div>
+      </div>
+    </section>
 
-<section id="people">
-<h2>People</h2>
+    <section id="join" class="section join">
+      <div>
+        <p class="eyebrow">Join & Collaboration</p>
+        <h2>We are recruiting motivated students and collaborators.</h2>
+        <p>
+          Students with strong backgrounds in robotics, computer vision,
+          machine learning, spatial intelligence, or embedded systems are encouraged to apply.
+        </p>
+      </div>
+      <a class="btn primary" href="mailto:yanyan.li@ust.hk">Contact Us</a>
+    </section>
+  </main>
 
-<div class="people-card">
-<strong>Dr. Yanyan Li</strong><br>
-Director, EmSAIL Lab<br>
-Assistant Professor (Incoming), HKUST(GZ)
-</div>
+  <footer>
+    <p>© EmSAIL Lab — Embodied Spatial AI Lab</p>
+  </footer>
 
-<div class="people-card">
-<strong>Research Assistants</strong><br>
-RA #1 (update soon)<br>
-RA #2 (update soon)
-</div>
-
-</section>
-
-<section id="openings">
-<h2>Openings</h2>
-
-<p>
-We are actively recruiting:
-</p>
-
-<ul>
-<li>PhD Students (Fall 2026 / Spring 2027)</li>
-<li>MPhil Students</li>
-<li>Research Assistants</li>
-<li>Research Interns (robotics / perception / VLA)</li>
-</ul>
-
-<p>
-Students with strong backgrounds in robotics, computer vision, machine learning, or embedded systems are encouraged to apply.
-</p>
-
-</section>
-
-<section id="contact">
-<h2>Contact</h2>
-
-<p>
-Email: yanyan.li@ust.hk (example placeholder)<br>
-Location: The Hong Kong University of Science and Technology (Guangzhou)
-</p>
-
-</section>
-
-<footer>
-© EmSAIL Lab
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
