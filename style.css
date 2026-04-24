@@ -23,7 +23,7 @@ body {
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 10;
-  height: 74px;
+  height: 96px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,13 +43,12 @@ body {
 }
 
 .brand img {
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
   object-fit: cover;
   background: white;
 }
-
 nav {
   display: flex;
   gap: 26px;
@@ -58,7 +57,7 @@ nav {
 nav a {
   color: #cbd5f5;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 24px;
 }
 
 nav a:hover { color: var(--cyan); }
@@ -73,10 +72,11 @@ nav a:hover { color: var(--cyan); }
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  min-height: calc(100vh - 96px);
   display: grid;
   place-items: center;
-  padding: 120px 6% 80px;
+  padding: 80px 6% 80px;
   background:
     radial-gradient(circle at 70% 30%, rgba(0,213,255,.22), transparent 34%),
     linear-gradient(135deg, #030717, #07133a 55%, #030717);
@@ -99,7 +99,8 @@ nav a:hover { color: var(--cyan); }
 
 .hero-content {
   position: relative;
-  max-width: 980px;
+  max-width: 1400px;
+  margin-top: -40px;
 }
 
 .eyebrow {
@@ -116,6 +117,14 @@ nav a:hover { color: var(--cyan); }
   line-height: .9;
   color: var(--cyan);
 }
+
+/* .hero h1 {
+  margin: 18px 0 10px;
+  font-size: clamp(56px, 9vw, 112px);
+  line-height: .9;
+  color: var(--cyan);
+  white-space: nowrap;
+} */
 
 .hero h2 {
   font-size: clamp(22px, 3vw, 34px);
@@ -253,10 +262,38 @@ nav a:hover { color: var(--cyan); }
 
 .light p { color: #58627c; }
 
+
+
 .people-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
-  gap: 22px;
+  grid-template-columns: repeat(2, 520px);
+  gap: 26px;
+}
+
+.pi-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 760px;
+  width: 100%;
+  padding: 28px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #ffffff, #eaf7ff);
+  border: 1px solid rgba(47,128,237,.22);
+  box-shadow: 0 18px 50px rgba(5,10,31,.08);
+}
+
+.pi-photo {
+  width: 140px;
+  height: 140px;
+
+  object-fit: cover;
+
+  border-radius: 18px;
+
+  border: 2px solid rgba(47,128,237,.25);
+
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
 }
 
 .avatar {
