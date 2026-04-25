@@ -358,6 +358,28 @@ nav a:hover { color: var(--cyan); }
 }
 
 .person-photo {
+  height: 160px;
+
+  background: linear-gradient(
+    135deg,
+    #0c2c5a,
+    #061737
+  );
+
+  border-radius: 12px;
+
+  margin-bottom: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+/* .person-photo {
 
   width: 100%;
 
@@ -374,7 +396,7 @@ nav a:hover { color: var(--cyan); }
 
   margin-bottom: 16px;
 
-}
+} */
 
 .people-role {
 
