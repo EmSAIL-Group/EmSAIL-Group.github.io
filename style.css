@@ -247,6 +247,7 @@ nav a:hover { color: var(--cyan); }
 }
 
 .card h3,
+.person h3, 
 .pub h3 {
   margin-top: 0;
   font-size: 22px;
@@ -259,11 +260,11 @@ nav a:hover { color: var(--cyan); }
   line-height: 1.7;
 }
 
-.person h3 {
+/* .person h3 {
   color: white;
   font-size: 20px;
   font-weight: 700;
-}
+} */
 
 
 .light p { color: #58627c; }
@@ -339,11 +340,12 @@ nav a:hover { color: var(--cyan); }
 
 .person {
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     160deg,
     #0f1c3f,
     #0a1430
-  );
+  ); */
+  background: white ;
 
   border-radius: 18px;
 
