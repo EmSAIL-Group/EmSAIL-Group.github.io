@@ -278,6 +278,21 @@ nav a:hover { color: var(--cyan); }
   margin-bottom: 48px; 
 }
 
+.person .research-interest,
+.person .duration {
+    display: block;
+    line-height: 1.5;
+}
+
+.person .research-interest {
+    margin-top: 10px;
+}
+
+.person .duration {
+    margin-top: 8px;
+    color: #666;
+}
+
 .pi-card {
   display: flex;
   align-items: center;
