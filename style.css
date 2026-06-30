@@ -275,6 +275,7 @@ nav a:hover { color: var(--cyan); }
   display: grid;
   grid-template-columns: repeat(2, 520px);
   gap: 26px;
+  margin-bottom: 48px; 
 }
 
 .pi-card {
@@ -336,6 +337,7 @@ nav a:hover { color: var(--cyan); }
 
 .person span {
   color: #58627c;
+  display: block;
 }
 
 .person {
