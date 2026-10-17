@@ -9,7 +9,7 @@
 <body>
   <header class="nav">
     <a class="brand" href="#home">
-      <img src="logo.png" alt="EmSAIL Lab logo" />
+      <img src="imgs/logo.png" alt="EmSAIL Lab logo" />
       <!-- <span>EmSAIL Lab</span> -->
     </a>
     <button class="menu-btn" id="menuBtn">☰</button>
@@ -25,21 +25,153 @@
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-content">
-        <!-- <p class="eyebrow">Embodied Spatial AI Lab</p> -->
-        <h1>Embodied Spatial AI Lab</h1>
-        <h2>Hong Kong University of Science and Technology (Guangzhou)</h2>
-        <p>
-          Building next-generation embodied spatial intelligence systems
-          for robots that perceive, reason, and act in complex real-world environments.
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#research">Explore Research</a>
-          <a class="btn secondary" href="#join">Join the Lab</a>
-        </div>
+    <section id="home" class="hero hero-carousel" aria-label="Featured research">
+      <div class="hero-slides" id="heroSlides">
+        
+        
+        
+              
+        <article class="hero-slide" aria-hidden="true" style="--slide-image:url('imgs/hero-tactile.png')">
+          <div class="slide-art"></div>
+          <div class="slide-shade"></div>
+
+          <div class="slide-copy">
+            <span class="slide-kicker">
+              FEATURED RESEARCH
+              <span class="slide-sep">/</span>
+              EMBODIED PERCEPTION
+            </span>
+
+            <h1>IsoTac</h1>
+
+            <h2>Low-Crosstalk Flexible Tactile Sensing</h2>
+
+            <p>
+              A 32 × 16 flexible tactile array with physically
+              isolated taxels and active-clamped readout for
+              high-fidelity spatial contact sensing.
+            </p>
+
+            <div class="slide-actions">
+              <a class="btn primary" href="#research">
+                Explore Research ↗
+              </a>
+              <a class="btn secondary" href="#publications">
+                Publications ↗
+              </a>
+            </div>
+          </div>
+
+          <span class="slide-watermark">01 / 04</span>
+        </article>
+        
+        <article class="hero-slide" aria-hidden="true" style="--slide-image:url('imgs/hero-robotarm.png')">
+          <div class="slide-art"></div>
+          <div class="slide-shade"></div>
+
+          <div class="slide-copy">
+            <span class="slide-kicker">
+              FEATURED RESEARCH
+              <span class="slide-sep">/</span>
+              ROBOT LEARNING & SYSTEMS
+            </span>
+
+            <h1>EmSAIL RedBird1</h1>
+
+            <h2>Building Robots from the Ground Up</h2>
+
+            <p>
+              An in-house developed robotic arm integrating
+              mechanical design, actuation, sensing, and control
+              for embodied intelligence research.
+            </p>
+
+            <div class="slide-actions">
+              <a class="btn primary" href="#research">
+                Explore Research ↗
+              </a>
+              <a class="btn secondary" href="#projects">
+                Explore Projects ↗
+              </a>
+            </div>
+          </div>
+
+          <span class="slide-watermark">04 / 04</span>
+        </article>
+
+        <article class="hero-slide is-active" aria-hidden="false" style="--slide-image:url('imgs/hero-geowam.png')">
+          <div class="slide-art"></div>
+          <div class="slide-shade"></div>
+
+          <div class="slide-copy">
+            <span class="slide-kicker">
+              FEATURED RESEARCH
+              <span class="slide-sep">/</span>
+              WORLD MODELS & ROBOT LEARNING
+            </span>
+
+            <h1>GeoWAM</h1>
+            <h2>Learning Geometric Evolution for Robot Action</h2>
+            <p>
+              Learning from 3D geometric evolution to enhance
+              robot action generation, enabling robust manipulation
+              without additional geometric inference.
+            </p>
+            <div class="slide-actions">
+              <a class="btn primary" href="#research">
+                Explore Research ↗
+              </a>
+              <a class="btn secondary" href="#publications">
+                Publications ↗
+              </a>
+            </div>
+          </div>
+          <span class="slide-watermark">01 / 04</span>
+        </article>
+
+        
+        <article class="hero-slide" aria-hidden="true" style="--slide-image:url('imgs/hero-4dgsslam.png')">
+          <div class="slide-art"></div>
+          <div class="slide-shade"></div>
+
+          <div class="slide-copy">
+            <span class="slide-kicker">
+              FEATURED RESEARCH
+              <span class="slide-sep">/</span>
+              SPATIAL INTELLIGENCE
+            </span>
+
+            <h1>InstanceFlow-SLAM</h1>
+
+            <h2>Instance-Guided Continuous Motion Reconstruction</h2>
+
+            <p>
+              Recovering continuous 4D motion from intermediate
+              RGB-D observations through instance-aware Gaussian
+              motion modeling, without additional mapping updates.
+            </p>
+
+            <div class="slide-actions">
+              <a class="btn primary" href="#research">
+                Explore Research ↗
+              </a>
+              <a class="btn secondary" href="#publications">
+                Publications ↗
+              </a>
+            </div>
+          </div>
+
+          <span class="slide-watermark">04 / 04</span>
+        </article>
+
+
       </div>
+      <div class="hero-bottom"><div class="hero-indicators" role="tablist" aria-label="Select featured research">
+        <button class="hero-dot" type="button" aria-label="Show StructureGS-SLAM" aria-selected="false"><span>01</span><b>Tactile Sensor</b></button>
+        <button class="hero-dot" type="button" aria-label="Show 4DGS-SLAM" aria-selected="false"><span>02</span><b>EmSAIL RobotArm</b></button>
+        <button class="hero-dot is-active" type="button" aria-label="Show GeoWAM" aria-selected="true"><span>03</span><b>GeoWAM</b></button>
+        <button class="hero-dot" type="button" aria-label="Show ST-Policy" aria-selected="false"><span>04</span><b>4DGS Instance SLAM</b></button>
+      </div><div class="hero-arrows"><button id="heroPrev" type="button" aria-label="Previous slide">←</button><button id="heroNext" type="button" aria-label="Next slide">→</button></div></div>
     </section>
 
     <section id="about" class="section">

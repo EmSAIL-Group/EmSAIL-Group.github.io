@@ -512,3 +512,30 @@ footer {
     display: grid;
   }
 }
+
+/* === EmSAIL featured research carousel === */
+.hero.hero-carousel{height: min(760px, calc(100svh - 80px));min-height:570px;padding:0;display:block;position:relative;margin-top:96px;background:#050c20;text-align:left;overflow:hidden}
+.hero-slides,.hero-slide,.slide-art,.slide-shade{position:absolute;inset:0}
+.hero-slide{opacity:0;visibility:hidden;transition:opacity .85s ease,visibility .85s;isolation:isolate}
+.hero-slide.is-active{opacity:1;visibility:visible;z-index:1}
+.slide-art{background-image:var(--slide-image);background-position:center;background-size:cover;transform:scale(1.035);transition:transform 7s linear}
+.hero-slide.is-active .slide-art{transform:scale(1)}
+.slide-shade{background:linear-gradient(90deg,rgba(2,8,26,.96) 0%,rgba(3,11,30,.9) 25%,rgba(3,11,30,.56) 48%,rgba(3,11,30,.1) 83%),linear-gradient(0deg,rgba(2,7,20,.85),transparent 28%)}
+.slide-copy{position:absolute;left:6%;top:44%;transform:translateY(-50%);max-width:min(710px,55vw);z-index:2}
+.slide-kicker{color:#5fe4ff;font-size:13px;font-weight:800;letter-spacing:.2em}
+.slide-sep{color:#7387a8;padding:0 8px}
+.hero-carousel .slide-copy h1{font-size:clamp(48px,5.6vw,88px);line-height:1.05;letter-spacing:-.045em;margin:22px 0 15px;color:#fff}
+.hero-carousel .slide-copy h2{font-size:clamp(21px,2.2vw,32px);line-height:1.25;color:#58dfff;font-weight:650;margin:0 0 20px}
+.hero-carousel .slide-copy p{margin:0;max-width:570px;color:#c4d4ea;font-size:clamp(15px,1.25vw,19px);line-height:1.65}
+.slide-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.slide-actions .btn{font-size:14px;border-radius:8px;padding:13px 20px}
+.slide-watermark{position:absolute;right:6%;top:8%;font-size:13px;letter-spacing:.15em;color:#a3b9d0}
+.hero-bottom{position:absolute;bottom:0;left:6%;right:6%;z-index:3;display:flex;justify-content:space-between;align-items:end;gap:30px;padding-bottom:30px}
+.hero-indicators{display:flex;gap:7px;flex:1;max-width:760px}
+.hero-dot{cursor:pointer;flex:1;min-width:0;border:0;border-top:2px solid #5b7089;background:none;color:#98abc4;text-align:left;padding:13px 4px 3px;font:inherit;display:flex;gap:12px;align-items:baseline}
+.hero-dot.is-active{border-color:#00d5ff;color:white}
+.hero-dot span{font-size:11px;color:#6fe1f7}.hero-dot b{font-size:13px;font-weight:650;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hero-arrows{display:flex;gap:10px}.hero-arrows button{height:42px;width:42px;border:1px solid #53647b;background:#09183088;color:white;border-radius:50%;font-size:20px;cursor:pointer}.hero-arrows button:hover{background:#00d5ff;color:#061024}
+@media(max-width:900px){.hero.hero-carousel{height:660px;min-height:0;margin-top:96px}.slide-copy{max-width:85%;top:43%}.slide-shade{background:linear-gradient(90deg,#03091bf2,#03091b9e 75%,#03091b55),linear-gradient(0deg,#03091b,transparent 35%)}.hero-dot b{display:none}.hero-dot{justify-content:center}.hero-bottom{bottom:0}.hero-carousel .slide-copy h1{font-size:clamp(40px,8vw,68px)}}
+@media(max-width:560px){.hero.hero-carousel{height:610px}.slide-copy{left:7%;max-width:86%}.hero-bottom{left:7%;right:7%;padding-bottom:23px}.slide-actions .btn{padding:11px 14px}.slide-kicker{font-size:10px;letter-spacing:.1em}.slide-watermark{right:7%;top:5%}}
+@media(prefers-reduced-motion:reduce){.hero-slide,.slide-art{transition:none}}
