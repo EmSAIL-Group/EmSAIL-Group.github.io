@@ -47,7 +47,7 @@ body {
   height: 74px;
   border-radius: 20px;
   object-fit: cover;
-  background: white;
+  /* background: white; */
 }
 nav {
   display: flex;
