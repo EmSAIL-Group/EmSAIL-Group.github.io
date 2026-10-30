@@ -628,3 +628,31 @@ footer {
 @media(max-width:900px){.hero.hero-carousel{height:660px;min-height:0;margin-top:96px}.slide-copy{max-width:85%;top:43%}.slide-shade{background:linear-gradient(90deg,#03091bf2,#03091b9e 75%,#03091b55),linear-gradient(0deg,#03091b,transparent 35%)}.hero-dot b{display:none}.hero-dot{justify-content:center}.hero-bottom{bottom:0}.hero-carousel .slide-copy h1{font-size:clamp(40px,8vw,68px)}}
 @media(max-width:560px){.hero.hero-carousel{height:610px}.slide-copy{left:7%;max-width:86%}.hero-bottom{left:7%;right:7%;padding-bottom:23px}.slide-actions .btn{padding:11px 14px}.slide-kicker{font-size:10px;letter-spacing:.1em}.slide-watermark{right:7%;top:5%}}
 @media(prefers-reduced-motion:reduce){.hero-slide,.slide-art{transition:none}}
+
+/* EmSAIL Research Projects carousel */
+.projects-showcase{background:#fff;color:#101b30}
+.projects-heading{display:grid;grid-template-columns: minmax(280px, .9fr) 1.4fr;gap:45px;align-items:center;margin-bottom:28px}
+.projects-eyebrow{font-size:12px;font-weight:800;letter-spacing:.19em;color:#879ab8;margin:0 0 14px}
+.projects-heading h2{font-size:clamp(28px,3vw,42px);line-height:1.12;letter-spacing:-.035em;margin:0}
+.projects-heading>p{font-size:16px;line-height:1.7;color:#60718c;max-width:650px}
+.project-carousel{position:relative}
+.project-slide{display:none}.project-slide.is-current{display:block;animation:projectFade .3s ease}
+@keyframes projectFade{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}
+.project-panels{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.project-panel{border:1px solid #dfe5ee;border-radius:24px;padding:25px;background:#fff;min-width:0;min-height:330px}
+.project-panel h3{font-size:21px;line-height:1.4;letter-spacing:-.02em;margin:14px 0}
+.project-panel p{color:#536581;font-size:15px;line-height:1.8;margin:0}
+.project-index{font-size:11px;font-weight:800;letter-spacing:.12em;color:#2f80ed}
+.project-image{height:180px;margin:15px 0 18px;background:#f5f7fa;border-radius:14px;display:flex;justify-content:center;align-items:center;overflow:hidden}
+.project-image img{height:100%;width:100%;object-fit:contain}
+.project-visual{height:180px;margin:15px 0 18px;background:linear-gradient(135deg,#0c1a39,#173f79);border-radius:14px;display:flex;align-items:center;justify-content:center;text-align:center;color:#c6eafa;font-weight:800;letter-spacing:.12em;font-size:13px}
+.project-side{padding-top:28px}.project-side h3{margin:0 0 16px}
+.project-tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}
+.project-tags span{border:1px solid #dfe5ee;border-radius:24px;padding:9px 12px;font-size:13px;color:#425673}
+.project-opportunity{margin-top:20px;border-radius:18px;background:#101827;color:#fff;padding:24px 26px}
+.project-opportunity strong{font-size:15px}.project-opportunity p{margin:10px 0 0;color:#dce5f5;line-height:1.6;font-size:15px}
+.project-arrow{position:absolute;top:38%;transform:translateY(-50%);width:43px;height:43px;border-radius:50%;background:#fff;border:1px solid #dfe5ee;cursor:pointer;color:#13233c;font-size:28px;line-height:1;display:grid;place-items:center;box-shadow:0 3px 12px #10213a10}
+.project-prev{left:-21px}.project-next{right:-21px}.project-arrow:hover{background:#eaf5ff;border-color:#2f80ed}
+.project-pagination{display:flex;justify-content:center;gap:9px;margin-top:22px}.project-pagination button{width:9px;height:9px;border:0;border-radius:20px;background:#cbd5e1;cursor:pointer;padding:0}.project-pagination button.is-current{width:28px;background:#2f80ed}
+@media(max-width:760px){.projects-heading{grid-template-columns:1fr;gap:8px}.project-panels{grid-template-columns:1fr}.project-panel{min-height:auto}.project-arrow{top:35%}.project-prev{left:-14px}.project-next{right:-14px}.project-panel{padding:20px}.project-image,.project-visual{height:170px}}
+@media(prefers-reduced-motion:reduce){.project-slide.is-current{animation:none}}
