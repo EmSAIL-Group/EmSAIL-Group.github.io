@@ -46,3 +46,20 @@ document.querySelectorAll("nav a").forEach((link) => {
   document.addEventListener('visibilitychange', () => document.hidden ? stop() : start());
   show(0); start();
 })();
+
+(function () {
+  const carousel=document.querySelector('.project-carousel');
+  if(!carousel)return;
+  const slides=[...carousel.querySelectorAll('.project-slide')];
+  const dots=[...document.querySelectorAll('.project-pagination button')];
+  let active=0;
+  function show(i){
+    active=(i+slides.length)%slides.length;
+    slides.forEach((slide,j)=>{const selected=j===active;slide.classList.toggle('is-current',selected);slide.setAttribute('aria-hidden',String(!selected));});
+    dots.forEach((dot,j)=>{dot.classList.toggle('is-current',j===active);if(j===active)dot.setAttribute('aria-current','true');else dot.removeAttribute('aria-current');});
+  }
+  carousel.querySelector('.project-prev').addEventListener('click',()=>show(active-1));
+  carousel.querySelector('.project-next').addEventListener('click',()=>show(active+1));
+  dots.forEach((dot,i)=>dot.addEventListener('click',()=>show(i)));
+  carousel.addEventListener('keydown',e=>{if(e.key==='ArrowLeft')show(active-1);if(e.key==='ArrowRight')show(active+1)});
+})();
